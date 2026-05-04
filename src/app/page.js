@@ -2,6 +2,10 @@ import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import Button from "@/ui/Button";
 import Image from "next/image";
+import PartnerShowcase from "@/components/home/PartnerShowcase";
+import PartnerNumber from "@/components/home/PartnerNumber";
+import PathToSuccess from "@/components/home/PathToSuccess";
+import DigitalSolutions from "@/components/home/DigitalSolutions";
 
 export default function Home() {
   return (
@@ -69,6 +73,11 @@ export default function Home() {
       </main>
       
     </div>
+    <DigitalSolutions/>
+    <PathToSuccess/>
+    <PartnerNumber/>
+    <PartnerShowcase/>
+    {/* <InfiniteMovingCardsDemo/> */}
     <Footer/>
     </>
   );

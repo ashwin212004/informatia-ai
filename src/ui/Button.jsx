@@ -1,17 +1,20 @@
 import React from "react";
 import { LiaArrowRightSolid } from "react-icons/lia";
-function Button({ text = "Explore More", onClick }) {
+
+function Button({ text = "Explore More", onClick, className = "" }) {
   return (
     <button
       onClick={onClick}
-      className="flex items-center justify-between gap-6 p-3
-                 bg-[#7642B9]
-                 text-white rounded-full shadow-md cursor-pointer"
+      className={`flex items-center gap-3  px-3 md:px-6 py-2 md:py-3 rounded-full
+                  bg-[#7642B9] hover:bg-[#522475] text-white cursor-pointer
+                  ${className}`}
     >
-      <span className="text-lg font-medium">{text}</span>
+      <span className="text-sm md:text-base font-medium">
+        {text}
+      </span>
 
-      <span className="flex items-center justify-center  bg-white rounded-2xl px-2 py-px">
-        <LiaArrowRightSolid className="w-6 h-6 text-[#7642B9]" />
+      <span className="flex items-center justify-center bg-white text-black rounded-full px-3 py-1">
+        <LiaArrowRightSolid className="text-base md:text-lg" />
       </span>
     </button>
   );
