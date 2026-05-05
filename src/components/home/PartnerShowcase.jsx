@@ -37,7 +37,7 @@ const MarqueeRow = ({ direction = "left" }) => {
             x: direction === "left" ? ["0%", "-50%"] : ["-50%", "0%"],
             transition: {
                 repeat: Infinity,
-                duration: 20,
+                duration: 50,
                 ease: "linear",
             },
         });
@@ -52,7 +52,7 @@ const MarqueeRow = ({ direction = "left" }) => {
                     x: direction === "left" ? ["0%", "-50%"] : ["-50%", "0%"],
                     transition: {
                         repeat: Infinity,
-                        duration: 20,
+                        duration: 50,
                         ease: "linear",
                     },
                 })
